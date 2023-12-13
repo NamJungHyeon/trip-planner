@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여행 플래너</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px;
+            font-size: 16px;
+            margin-left: 10px;
+            color: #333;
+        }
+
+        nav a:hover {
+            background-color: #ccc;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>여행 플래너</h1>
+        <hr>
+        <nav>
+            <a href="/">홈</a>
+            <a href="/schedule">일정</a>
+            <a href="/community">커뮤니티</a>
+            <a href="/login">로그인</a>
+            <a href="/signup">회원가입</a>
+        </nav>
+    </header>
+    <main>
+        <img src="{{ url_for('static', filename='images/plane.png') }}" alt="">
+    </main>
+</body>
+</html>
